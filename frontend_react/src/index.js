@@ -1,7 +1,12 @@
-import React from 'react'; //Import react into index.js which every React app needs to have
-import { ReactDOM } from 'react';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 import App from './App';
 import './index.css';
 
-ReactDOM.render(<App />, document.getElementById('root')); //We are connecting our app straight to the div with an id of 'root'
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root'),
+);
